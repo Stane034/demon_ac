@@ -2,6 +2,9 @@
 
 FiveM Anticheat
 
+demon_ac beta > chocohax
+demon_ac beta > venom
+
 Beta Version
 
 Discord For More Resources : https://discord.gg/QZnJgnvBvG
