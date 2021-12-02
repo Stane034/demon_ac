@@ -240,21 +240,6 @@ function proveralogovi(name, message)
 	PerformHttpRequest(Cfg.proveralogovi, function(err, text, headers) end, 'POST', json.encode({username = "Logovi", embeds = poruka, avatar_url = "https://cdn.discordapp.com/attachments/732353958349242460/764825950458085414/IMG_20201011_123627_852.jpg"}), { ['Content-Type'] = 'application/json' })
 end
 
-function iplogs(huk, boja, name, message)
-	local vrijeme = os.date('*t')
-	local poruka = {
-		{
-			["color"] = boja,
-			["title"] = "**".. name .."**",
-			["description"] = message,
-			["footer"] = {
-			["text"] = "Logovi\nVreme: " .. vrijeme.hour .. ":" .. vrijeme.min .. ":" .. vrijeme.sec,
-			},
-		}
-	  }
-	PerformHttpRequest(huk, function(err, text, headers) end, 'POST', json.encode({username = "Logovi", embeds = poruka, avatar_url = "https://cdn.discordapp.com/attachments/732353958349242460/764825950458085414/IMG_20201011_123627_852.jpg"}), { ['Content-Type'] = 'application/json' })
-end
-
 function banlogovi(name, message)
 	local vrijeme = os.date('*t')
 	local poruka = {
